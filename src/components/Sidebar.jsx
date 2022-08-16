@@ -2,8 +2,8 @@ import "./Sidebar.css";
 
 const Sidebar = () => {
   return (
-    <div class="app-sidebar">
-      <div class="app-sidebar-header">
+    <div className="app-sidebar">
+      <div className="app-sidebar-header">
         <h1>ノート</h1>
         <button>追加</button>
       </div>
