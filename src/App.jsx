@@ -27,6 +27,8 @@ function App() {
     setNotes(filterNotes);
   }
 
+  const onUpdateNote = () 
+
   return (
     <div className="App">
       <Sidebar
