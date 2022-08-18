@@ -1,14 +1,18 @@
 import "./Main.css";
 
-const Main = ({ activeNote }) => {
+const Main = ({ activeNote, onUpdateNote }) => {
 
   if(!activeNote) {
     return <div className="no-active-note">ノートが選択されていません</div>;
   }
 
-  const onEditNote = () => {
-    
-  }
+  const onEditNote = (key, value) => {
+    onUpdateNote({
+      ...activeNote,
+      [key]: value,
+      modDate: Date.now(),
+    });
+  };
 
   return (
     <div className="app-main">
